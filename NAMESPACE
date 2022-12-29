@@ -1,0 +1,5 @@
+useDynLib(weibull_nr, .registration=TRUE)
+
+importFrom("survival", "survreg", "Surv")
+
+export(wnr)
