@@ -1,9 +1,11 @@
 Package: wnr
 Version: 0.1
+Date: 2022-12-29
 Title: Weibull Life Time Estimates using Newton-Raphson Algorithm
 Author: Francisco Ariel Vazquez Chavez
 Maintainer: Francisco Ariel Vazquez Chavez <vazquez.francisco@colpos.mx>
 Depends: R (>= 3.5.0)
 Imports: survival
 Description: Fits Weibull Life Time random variables with Type I right censorship using Newton-Raphson Algorithm.
+NeedsCompilation: yes
 License: GPL-3
