@@ -1,6 +1,6 @@
-# wnr 
+# wnr
 
-This repository contains source code for the R-package `wnr`. 
+This repository contains source code for the R-package `wnr`.
 
 It estimates parameters of a weibull distribution using a Newton-Raphson Algorithm.
 

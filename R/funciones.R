@@ -19,7 +19,7 @@ wnr <- function(y, d, init, niter = 30, tol = 0.0001, hist = TRUE) {
     if (salida$cod == 1) {
        return(salida)
     } else {
-       cat("El algoritmo no convengió\n")
+       cat("El algoritmo no ha convengido\n")
     }
 }
 dyn.unload("weibull_nr.dll")
