@@ -291,7 +291,7 @@ void weibull_nr(double *x0, double *ops, int *n, double *ti, double *di, int *co
         }
         if (fabs(xfin[0] - xini[0]) < tol && fabs(xfin[1] - xini[1]) < tol)
         {
-            printf("El algoritmo ha convergido en %d pasos.\n", i);
+            Rprintf("El algoritmo ha convergido en %d pasos.\n", i);
             codigo = 1;
             *cod = codigo;
             VC(xfin[0], xfin[1], *n, ti, di, vcov);
@@ -304,7 +304,7 @@ void weibull_nr(double *x0, double *ops, int *n, double *ti, double *di, int *co
     }
     if (i >= niter && !(fabs(xfin[0] - xini[0]) < tol && fabs(xfin[1] - xini[1]) < tol))
     {
-        printf("El algoritmo no encontró un óptimo.\n");
+        Rprintf("El algoritmo no ha alcanzado convergencia.\n");
         codigo = -1;
         *cod = codigo;
     }
