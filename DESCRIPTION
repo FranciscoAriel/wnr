@@ -7,5 +7,6 @@ Maintainer: Francisco Ariel Vazquez Chavez <vazquez.francisco@colpos.mx>
 Depends: R (>= 3.5.0)
 Imports: survival
 Description: Fits Weibull Life Time random variables with Type I right censorship using Newton-Raphson Algorithm.
+LazyLoad: yes
 NeedsCompilation: yes
 License: GPL-3
