@@ -266,7 +266,7 @@ void aux_nr(double *x0, int *n, double *ti, double *di, double *xfin)
 /// @param xfin Double. Vector de dimensión 2 en donde se almacenará la información.
 /// @param vcov Double. Matriz en donde se guardará la matriz de covarianzas.
 /// @param hist Entero. Indica si se debe imprimir el historial de iteraciones (1).
-void weibull_nr(double *x0, double *ops, int *n, double *ti, double *di, int *cod, double *xfin, double *vcov, int *hist)
+void wnr(double *x0, double *ops, int *n, double *ti, double *di, int *cod, double *xfin, double *vcov, int *hist)
 {
     int i = 1, codigo;
     double niter, tol;

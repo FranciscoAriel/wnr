@@ -6,6 +6,6 @@ It estimates parameters of a weibull distribution using a Newton-Raphson Algorit
 
 This package is experimental and was done with educational purposes.
 
-R-tools is required in order to compile the package. You can download from [here](https://cran.r-project.org/bin/windows/Rtools/).
+R-tools is required in order to compile the package in windows. You can download them from [here](https://cran.r-project.org/bin/windows/Rtools/).
 
-This package was written and built in Windows 11.
+This package was written and built in Windows 11, some tests were done in Ubuntu using [WSL](https://learn.microsoft.com/en-us/windows/wsl/about).
