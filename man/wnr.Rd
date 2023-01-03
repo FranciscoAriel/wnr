@@ -5,7 +5,7 @@
   Obtaint maximum likelihood estimators for the Weibull distribution.
 }
 \usage{
-wnr(y, d, init, niter = 30, tol = 0.0001, hist = 1)
+wnr(y, d, init, niter = 30, tol = 0.0001, hist = TRUE)
 }
 \arguments{
   \item{y}{Failure time.}
@@ -36,11 +36,11 @@ See vignette for further details.
 \examples{
 
  library(wnr)
- data(devices)
+ data(device)
 
  #Obtainning the maximum likelihood estimators
  params <- c(1720, 1.3)
- wnr(devices$t, devices$d, params)
+ wnr(device$t, device$d, params)
 
 }
 

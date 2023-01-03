@@ -1,4 +1,4 @@
-dyn.load("src/wnr.dll")
+#dyn.load("src/wnr.dll")
 
 wnr <- function(y, d, init, niter = 30, tol = 0.0001, hist = TRUE) {
     n <- length(y)
@@ -22,4 +22,4 @@ wnr <- function(y, d, init, niter = 30, tol = 0.0001, hist = TRUE) {
        cat("El algoritmo no ha convengido\n")
     }
 }
-dyn.unload("wnr.dll")
+#dyn.unload("wnr.dll")
