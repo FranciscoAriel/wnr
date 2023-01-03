@@ -4,17 +4,16 @@
 \description{
 	The dataset contains information about temperature-accelerated life test data on a certain device.
   Device samples were tested for up to 5000 hours at four separate temperatures.
-
-  This dataset only contains information where temperature is 80 degrees celsius.
 }
 
 \usage{
   data(device)
 }
 \format{
-  The data.frame `device' has two columns: 1)t and 2)d.
-  t: Failure time.
-  d: Status (1) failed, (0) censored.
+  The data.frame `device' has three columns:
+  Hours: Failure time.
+  Status: Failed (1) or Censored (0).
+  Temperature: Celcius degrees.
 }
 
 \references{
