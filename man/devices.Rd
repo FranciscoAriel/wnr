@@ -1,5 +1,5 @@
-\name{device}
-\alias{device}
+\name{devices}
+\alias{devices}
 \title{Temperature-Accelerated Life Test Data for Device-A}
 \description{
 	The dataset contains information about temperature-accelerated life test data on a certain device.
@@ -7,10 +7,10 @@
 }
 
 \usage{
-  data(device)
+  data(devices)
 }
 \format{
-  The data.frame `device' has three columns:
+  The data.frame `devices' has three columns:
   Hours: Failure time.
   Status: Failed (1) or Censored (0).
   Temperature: Celcius degrees.

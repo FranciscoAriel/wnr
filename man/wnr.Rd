@@ -5,14 +5,14 @@
   Obtaint maximum likelihood estimators for the Weibull distribution.
 }
 \usage{
-wnr(y, d, init, niter = 30, tol = 0.0001, hist = TRUE)
+wnr(y, d, init = c(mean(y), 1), niter = 30, tol = 0.0001, hist = TRUE)
 }
 \arguments{
   \item{y}{Failure time.}
   \item{d}{Status. Usually 1 means complete observation and 0 right censoring.}
   \item{init}{Initial values for both shape and scale parameters.}
-  \item{maxiter}{Maximum number of iterations for the Newton-Raphson algorithm, the default is 30.}
-  \item{epsilon}{Stopping criteria, the routine finishes when the changes from one iteration to other is smaller a given treshold (default is 0.0001).}
+  \item{niter}{Maximum number of iterations for the Newton-Raphson algorithm, the default is 30.}
+  \item{tol}{Stopping criteria, the routine finishes when the changes from one iteration to other is smaller a given treshold (default is 0.0001).}
   \item{hist}{Displays iteration history, otherwise only returns the result.}
 }
 
@@ -36,12 +36,14 @@ See vignette for further details.
 \examples{
 
  library(wnr)
- data(device)
-
- #Obtainning the maximum likelihood estimators
+ time = c(283,361,515,638,854,1024,1030,1045,1767,1777,1856,1951,1964,2884,5000)
+ status = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,0)
+ # Default values
+ wnr(time,status)
+ # Fast convergence
+ # Obtainning the maximum likelihood estimators
  params <- c(1720, 1.3)
- wnr(device$t, device$d, params)
-
+ wnr(time,status,init = params)
 }
 
 \keyword{methods}

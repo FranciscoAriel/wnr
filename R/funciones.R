@@ -1,6 +1,6 @@
 #dyn.load("src/wnr.dll")
 
-wnr <- function(y, d, init, niter = 30, tol = 0.0001, hist = TRUE) {
+wnr <- function(y, d, init = c(mean(y), 1), niter = 30, tol = 0.0001, hist = TRUE) {
     n <- length(y)
     codigo <- 0
     xfin <- c(0.00001, 0.0001)
