@@ -19,6 +19,7 @@ This package was written and built in Windows 11, some tests were done in Ubuntu
 
 ## History versions
 
+* 0.4 First release
 * 0.3 Stable version ([issue #1](https://github.com/FranciscoAriel/wnr/issues/1#issue-1516963574) solved)
 * 0.2 Some bugs solved
-* 0.1 First release
+* 0.1 Alpha version

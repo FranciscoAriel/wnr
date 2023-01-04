@@ -10,7 +10,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include <rmath.h>
+#include <Rmath.h>
 #include <R.h>
 
 
